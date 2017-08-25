@@ -1,0 +1,6 @@
+<div>
+  <form [formGroup]="formModel">
+    <input type="text" formControlName="itemName" value="" />
+    <button (click)="addItem.emit(formModel)">Add Item</button>
+  </form>
+</div>

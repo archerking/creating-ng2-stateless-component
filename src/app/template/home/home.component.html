@@ -1,0 +1,5 @@
+<div><h1>{{title}}</h1></div>
+<app-stateless-comp (addItem)=addToParent($event)></app-stateless-comp>
+<ul>
+    <li *ngFor="let item of items">{{item.itemName}}</li>
+</ul>
